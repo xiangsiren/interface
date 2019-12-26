@@ -4,9 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/App/Common/mysql.py" line="204" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5161b637-99d8-4419-87b4-fde4ae3e19a3" name="Default Changelist" comment="">
+    <list default="true" id="5161b637-99d8-4419-87b4-fde4ae3e19a3" name="Default Changelist" comment="添加忽略">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,15 +40,12 @@
     <SUITE FILE_PATH="coverage/interface$Unittests_for_imooc_case_ImoocCase_test_banner.coverage" NAME="Unittests for imooc_case.ImoocCase.test_banner Coverage Results" MODIFIED="1576662840994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UnittestCase" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -106,6 +104,7 @@
         <option value="$PROJECT_DIR$/App/Controller/UserController.py" />
         <option value="$PROJECT_DIR$/App/Controller/CaseController.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -121,7 +120,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -133,11 +131,22 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="interface" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../supply-chain-api-old" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -293,7 +302,9 @@
       <workItem from="1577090365381" duration="2431000" />
       <workItem from="1577179319404" duration="1243000" />
       <workItem from="1577235684614" duration="2282000" />
-      <workItem from="1577322720670" duration="22646000" />
+      <workItem from="1577322720670" duration="22972000" />
+      <workItem from="1577358354724" duration="39000" />
+      <workItem from="1577358401563" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="添加忽略">
       <created>1577357083834</created>
@@ -302,7 +313,28 @@
       <option name="project" value="LOCAL" />
       <updated>1577357083834</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="添加忽略">
+      <created>1577358018096</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577358018096</updated>
+    </task>
+    <task id="LOCAL-00003" summary="添加忽略">
+      <created>1577358206357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1577358206357</updated>
+    </task>
+    <task id="LOCAL-00004" summary="添加忽略">
+      <created>1577359328790</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1577359328790</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -338,14 +370,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107427000" />
+    <option name="totallyTimeSpent" value="108774000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6925515" visible="true" weight="0.20309168" />
-      <window_info id="Structure" order="1" sideWeight="0.3074485" side_tool="true" visible="true" weight="0.20309168" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.686606" visible="true" weight="0.14392324" />
+      <window_info id="Structure" order="1" sideWeight="0.313394" side_tool="true" visible="true" weight="0.14392324" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32900432" />
@@ -353,17 +385,17 @@
       <window_info anchor="bottom" id="Inspection" order="3" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="4" />
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49840087" visible="true" weight="0.16684724" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.25373134" side_tool="true" visible="true" weight="0.3163597" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.74626863" visible="true" weight="0.3163597" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" visible="true" weight="0.16684724" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.74626863" weight="0.3163597" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Run" order="5" visible="true" weight="0.28518122" />
+      <window_info anchor="right" id="Run" order="5" weight="0.28518122" />
       <window_info anchor="right" id="Debug" order="6" weight="0.32302773" />
     </layout>
   </component>
@@ -776,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/Model/Models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
@@ -796,10 +821,17 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <first_editor relative-caret-position="22">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
