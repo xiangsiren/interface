@@ -30,4 +30,4 @@ share/python-wheels/
 MANIFEST
 # document
 doc/
-./Pipfile.lock
+Pipfile.lock
