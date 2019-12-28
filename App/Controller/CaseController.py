@@ -1,129 +1,118 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-import ddt
-import unittest
-import json
-from Util.handle_excel import excel_data
-from Util.handle_header import get_header
-from Util.handle_result import handle_result, handle_result_json, get_result_json
-from Util.handle_cookie import write_cookie, get_cookie_value
-from Util.codition_data import get_data
-from Base.base_request import request
-from Util import HTMLTestRunner
+import sys
+import os
+base_path = os.getcwd()
+sys.path.append(base_path)
+import App.Common.mysql
+from App.Common.mysql import cli
+from App.Model.Models import *
+from datetime import datetime
+# import json
+types = ['css', 'js', 'png', 'jpg', 'jif', 'ico']
 
-data = excel_data.get_excel_data()
+class GetData:
 
+    def request(self, flow):
 
-@ddt.ddt
-class TestRunCaseDdt(unittest.TestCase):
+        self.request_url = flow.request.url
+        # print("request_url:-------->", self.request_url)
+        if "banmacang.com" in flow.request.url:
+            request_headers = flow.request.headers
+            path = flow.request.path.split(".")
+            t = path[len(path) - 1]
+            if t not in types:
+                print("请求路径==" + flow.request.path.split("?")[0])
+                print("请求方法==" + flow.request.method)
+                print("请求data==" + str(flow.request.text))
+                c = Case()
+                c.path = flow.request.path.split("?")[0]
+                c.case_name = "测试用例"
+                c.method = flow.request.method
+                c.request_data = str(flow.request.text)
+                c.response_data = flow.request.url
+                c.time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                DBsession = cli().get_session()
+                DBsession.add(c)
+                DBsession.commit()
+                DBsession.close()
 
-    @ddt.data(*data)
-    def test_main_case(self, data):
-        cookie = None
-        get_cookie = None
-        header = None
-        depend_data = None
-        is_run = data[2]
-        case_id = data[0]
-        i = excel_data.get_rows_number(case_id)
-        if is_run == 'yes':
-            is_depend = data[3]
-            data1 = json.loads(data[7])
-            try:
-                if is_depend:
-                    '''
-                    获取依赖数据
-                    '''
-                    depend_key = data[4]
-                    depend_data = get_data(is_depend)
-                    # print(depend_data)
-                    data1[depend_key] = depend_data
+            # if 'image' in request_headers['accept']:
+            #     print("图片不抓取了= " + flow.request.path)
+            # elif '.js' in flow.request.path:
+            #     print("js路径==" + flow.request.path)
+            # else:
+                # print(request_headers['Content-Type'])
+                # ctx.log.warn("请求头==" + str(flow.request.headers))
+                # print("请求路径==" + flow.request.path)
+                # print("请求方法==" + flow.request.method)
+                # print("请求url==" + flow.request.url)
+                # print("请求主机==" + flow.request.host)
+                # print("请求数据" + str(request_data))
+            #
+            # request_pr = request_data.query
+            # request_form = request_data.urlencoded_form
+            # print("request_pr:------------->",request_pr)
+            # print("request_form:---------->",request_form)
+            # print("request_form:---------->",request_data.headers)
+            # print("=====222222222222========")
+        #     c = Case()
+        #     c.url = self.request_url
+        #     c.case_name = "测试用例"
+        #     c.method = request_data.urlencoded_form
+        #     c.request_data = flow.
+        #     c.response_data = "{'name':renren,''pass':'123334'}"
+        #     c.time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        #     DBsession = cli().get_session()
+        #     DBsession.add(c)
+        #     DBsession.commit()
+        #     DBsession.close()
 
-                method = data[6]
-                url = data[5]
+    def response(self, flow):
+        if 'ssbanmacang.com' in self.request_url:
 
-                is_header = data[9]
-                excepect_method = data[10]
-                excepect_result = data[11]
-                cookie_method = data[8]
-                if cookie_method == 'yes':
-                    cookie = get_cookie_value('app')
-                if cookie_method == 'write':
-                    '''
-                    必须是获取到cookie
-                    '''
-                    get_cookie = {"is_cookie": "app"}
-                if is_header == 'yes':
-                    header = get_header()
+            response_header = flow.response.headers
+            # print("响应头==" + str(flow.response.headers))
 
-                res = request.run_main(method, url, data1, cookie, get_cookie, header)
-                # print(res)
-                code = str(res['errorCode'])
-                message = res['errorDesc']
-                # message+errorcode
-
-                if excepect_method == 'mec':
-                    config_message = handle_result(url, code)
-                    '''
-                        if message == config_message:
-                            excel_data.excel_write_data(i,13,"通过")
-                        else:
-                            excel_data.excel_write_data(i,13,"失败")
-                            excel_data.excel_write_data(i,14,json.dumps(res))
-                    '''
-                    try:
-                        self.assertEqual(message, config_message)
-                        excel_data.excel_write_data(i, 13, "通过")
-                        excel_data.excel_write_data(i, 14, json.dumps(res))
-                    except Exception as e:
-                        excel_data.excel_write_data(i, 13, "失败")
-                        raise e
-
-                if excepect_method == 'errorcode':
-                    '''
-                    if excepect_result == code:
-                        excel_data.excel_write_data(i,14,"通过")
-                    else:
-                        excel_data.excel_write_data(i,13,"失败")
-                        excel_data.excel_write_data(i,14,json.dumps(res))
-                    '''
-                    try:
-                        self.assertEqual(excepect_result, code)
-                        excel_data.excel_write_data(i, 13, "通过")
-                    except Exception as e:
-                        excel_data.excel_write_data(i, 13, "失败")
-                        raise e
-                if excepect_method == 'json':
-
-                    if code == 1000:
-                        status_str = 'sucess'
-                    else:
-                        status_str = 'error'
-                    excepect_result = get_result_json(url, status_str)
-                    result = handle_result_json(res, excepect_result)
-                    '''
-                    if result:
-                        excel_data.excel_write_data(i,13,"通过")
-                    else:
-                        excel_data.excel_write_data(i,13,"失败")
-                        excel_data.excel_write_data(i,14,json.dumps(res))   
-                    '''
-                    try:
-                        self.assertTrue(result)
-                        excel_data.excel_write_data(i, 13, "通过")
-                    except Exception as e:
-                        excel_data.excel_write_data(i, 13, "失败")
-                        raise e
-            except Exception as e:
-                excel_data.excel_write_data(i, 13, "失败")
-                raise e
+            conten_type = response_header['Content-Type']
+            print("conten_type========>", conten_type)
+            if conten_type == 'image/jpeg':
+                print("这个返回的是图片")
+            elif 'json' in conten_type:
+                print("响应状态码==" + str(flow.response.status_code))
+                print("响应文本==" + flow.response.text)
+            elif 'text' in conten_type:
+                print("text==" + flow.response.text)
+            else:
+                print("格式不需要了")
+            # host = self.request_url.split(".com")
+            # base_url = host[0]
+            # url = host[1]
+            # # /api3/getbanneradvertver2
+            # # api3/getbanneradvertver2?aaa=sss
+            # if "?" in host[1]:
+            #     url = url.split("?")[0]
+            # print("====>", url)
+            # data = json.dumps(get_value(url))
+            # print("----->data:", data)
+            # response_data.set_text(data)
+            '''
+            response_header = response_data.headers
+            conten_type = response_header['Content-Type']
+            print("========>",conten_type)
+            if conten_type == 'image/jpeg':
+                print("这个返回的是图片")
+            elif  'json' in conten_type:
+                print("code=========>",response_data.status_code)
+                print("response=======>",response_data.text)
+            else:
+                print("格式不是我们预期的")
+            '''
+            # 1、高级得mock
+            # mitmweb -s App\Controller\CaseController.py
 
 
-if __name__ == "__main__":
-    case_path = base_path + "/Run"
-    report_path = base_path + "/Report/report.html"
-    discover = unittest.defaultTestLoader.discover(case_path, pattern="run_case_*.py")
-    # unittest.TextTestRunner().run(discover)
-    with open(report_path, "wb") as f:
-        runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="Mushishi", description="this is test")
-        runner.run(discover)
+addons = [
+    GetData()
+]
+

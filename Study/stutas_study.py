@@ -1,10 +1,10 @@
 #coding=utf-8
 import requests
-import json
-url = 'http://www.imooc.com/order/test/ssssss'
-#res = requests.get(url).status_code
-res = requests.get(url).raise_for_status()
-#res = requests.codes.ok
 
 
-print(res)
+paths = "/dist_new/goodsManage/singleProductL.64e8b.chunk.js"
+ss = paths.split(".")
+type = ss[len(ss) - 1]
+types = ['.css', 'js', '.png', '.jpg', '.jif', '.ico']
+if type not in types:
+    print("dssdsdsd")

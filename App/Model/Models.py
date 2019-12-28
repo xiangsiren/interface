@@ -21,7 +21,7 @@ class Case(Base):
     __tablename__ = 'case'
     id = Column(BigInteger, nullable=False, primary_key=True)
     case_name = Column(String(255), comment='接口作用名称')
-    url = Column(String(255), comment='接口路由')
+    path = Column(String(255), comment='接口路由')
     method = Column(String, nullable=False, comment='请求类型')
     request_data = Column(Text, comment='请求数据')
     response_data = Column(Text, comment='响应数据')
