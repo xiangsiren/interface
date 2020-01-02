@@ -20,7 +20,7 @@ openpyxl = "*"
 deepdiff = "*"
 ddt = "*"
 sqlalchemy = "*"
-pymysql = "*"
+mysql-connector = "*"
 
 [requires]
 python_version = "3.7"
