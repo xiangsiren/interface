@@ -9,7 +9,7 @@ from App.Common import conf
 
 class cli:
     def __init__(self):
-        conn = 'mysql+pymysql://{}:{}@{}:{}/{}?charset=utf8'.format(conf.RDS_MYSQL['USER'],
+        conn = 'mysql+mysqlconnector://{}:{}@{}:{}/{}?charset=utf8'.format(conf.RDS_MYSQL['USER'],
                                                                     conf.RDS_MYSQL['PASSWORD'],
                                                                     conf.RDS_MYSQL['HOST'],
                                                                     conf.RDS_MYSQL['PORT'],
