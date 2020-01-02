@@ -2,8 +2,10 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-base_path = os.getcwd()
-sys.path.append(base_path)
+# base_path = os.getcwd()
+# print(base_path)
+# sys.path.append(base_path)
+# print(sys.path)
 import App.Common.mysql
 from App.Common.mysql import cli
 from App.Model.Models import *
