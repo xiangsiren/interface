@@ -2,8 +2,8 @@
 import sys
 import os
 import configparser
-base_path = os.getcwd()
-sys.path.append(base_path)
+# base_path = os.getcwd()
+# sys.path.append(base_path)
 import requests
 import json
 from Util.handle_cookie import write_cookie
@@ -65,5 +65,6 @@ request = BaseRequest()
 
 
 if __name__ == "__main__":
-    request = BaseRequest() 
-    request.run_main('get','http://www.baidu.com/login',"{'username':'11111'}")
+    pass
+    # request = BaseRequest()
+    # request.run_main('get','http://www.baidu.com/login',"{'username':'11111'}")
