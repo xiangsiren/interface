@@ -2,16 +2,17 @@
 # -*- coding: utf-8 -*-
 import sys
 import os
-# base_path = os.getcwd()
-# print(base_path)
-# sys.path.append(base_path)
-# print(sys.path)
+base_path = os.getcwd()
+print(sys.path)
+sys.path.append(base_path)
+print(sys.path)
 import App.Common.mysql
 from App.Common.mysql import cli
 from App.Model.Models import *
 from datetime import datetime
 # import json
 types = ['css', 'js', 'png', 'jpg', 'jif', 'ico']
+
 
 class GetData:
 
@@ -117,4 +118,5 @@ class GetData:
 addons = [
     GetData()
 ]
-
+if __name__ == "__main__":
+    print("3333")
