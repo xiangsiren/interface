@@ -1,6 +1,5 @@
-#coding=utf-8
-import sys
-import os
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
 import configparser
 # base_path = os.getcwd()
 # sys.path.append(base_path)
