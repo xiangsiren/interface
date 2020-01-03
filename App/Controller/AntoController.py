@@ -11,6 +11,7 @@ from App.Common.mysql import cli
 from App.Model.Models import *
 from datetime import datetime
 
+
 DBsession = cli().get_session()
 case1 = DBsession.query(Case).filter(Case.id == 6).one()
 # DBsession.commit()
