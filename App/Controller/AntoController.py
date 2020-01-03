@@ -9,7 +9,6 @@ import app
 from Base.base_request import request
 from App.Common.mysql import cli
 from App.Model.Models import *
-from datetime import datetime
 
 
 DBsession = cli().get_session()
