@@ -1,12 +1,9 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
+
 import sys
 import os
-# base_path = os.getcwd()
-# print(sys.path)
-# sys.path.append(base_path)
-# print(sys.path)
-import App.Common.mysql
+sys.path.append(os.getcwd())
 from App.Common.mysql import cli
 from App.Model.Models import *
 from datetime import datetime
@@ -20,7 +17,7 @@ class GetData:
 
         self.request_url = flow.request.url
         # print("request_url:-------->", self.request_url)
-        if "banmacang.com" in flow.request.url:
+        if "saas-test.banmacang.com" in flow.request.url:
             request_headers = flow.request.headers
             path = flow.request.path.split(".")
             t = path[len(path) - 1]
