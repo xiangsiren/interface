@@ -30,7 +30,7 @@ class GetData:
                 c.case_name = "测试用例"
                 c.method = flow.request.method
                 c.request_data = str(flow.request.text)
-                c.response_data = flow.request.url
+                c.request_url = flow.request.url
                 c.time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                 DBsession = cli().get_session()
                 DBsession.add(c)
