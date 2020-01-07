@@ -10,6 +10,7 @@ from Util import HTMLTestRunner
 from Base.base_request import request
 import requests
 
+
 def read_json():
     with open("E:/python/interface/Config/user_data.json") as f:
         data = json.load(f)
@@ -72,19 +73,19 @@ class RenrenCase(unittest.TestCase):
 
         # res = request.run_main('post',url,data)
 
-        res = requests.post(url, data=json.dumps(data), verify=False).text
+        res = requests.post(url, data=json.dumps(data), verify=False).json()
 
-        self.assertEqual(res, 0)
+        self.assertEqual(res["code"],0)
 
 
-if __name__ == "imooc_case":
-    unittest.TestSuite()
+if __name__ == "__main__":
+
     print("5551= ",__name__)
     suite = unittest.TestSuite()
     suite.addTest(RenrenCase('test_banner'))
     suite.addTest(RenrenCase('test_login'))
     # file_path = base_path+'/Report/repor.html'
-    file_path = 'E:\python\interface\Report\\repor.html'
+    file_path = '/Users/ren/Desktop/web/python/interface/Report/report.html'
     with open(file_path, 'wb') as f:
         # for line in f.readlines(): print(line.strip())  # 把末尾的'\n'删掉
         runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="this is test", description="bammacang test")
