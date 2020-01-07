@@ -24,6 +24,7 @@ class Case(Base):
     path = Column(String(255), comment='接口路由')
     method = Column(String, nullable=False, comment='请求类型')
     request_data = Column(Text, comment='请求数据')
+    request_url = Column(Text, comment="请求的URL")
     response_data = Column(Text, comment='响应数据')
     time = Column(DateTime, comment='录制时间')
 
