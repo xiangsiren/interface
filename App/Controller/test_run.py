@@ -3,9 +3,8 @@
 import sys
 import os
 
-base_path = os.getcwd()
-sys.path.append(base_path)
-from Util.handle_excel import excel_data
+sys.path.append(os.getcwd())
+
 from App.Common.mysql import cli
 import unittest
 # from ddt import ddt,data,file_data,unpack
@@ -22,7 +21,7 @@ case1 = DBsession.query(Case).all()
 class TestRunMain(unittest.TestCase):
 
     @ddt.data(*case1)
-    def test_case(self, data):
+    def test_case(self, case1):
         res = request.run_main(case1.method, case1.request_url + '&debug=true', case1.request_data)
         self.assertEqual(res['code'], 0)
 
