@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2020-01-02 10:59:01
+Date: 2020-01-08 17:13:26
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -45,23 +45,18 @@ CREATE TABLE `case` (
   `case_name` varchar(255) DEFAULT NULL COMMENT '接口名称',
   `path` varchar(255) NOT NULL COMMENT '请求接口',
   `method` enum('post','get') DEFAULT NULL COMMENT '请求类型',
+  `request_url` text,
   `request_data` text COMMENT '请求数据',
   `response_data` text COMMENT '响应数据',
   `time` datetime DEFAULT NULL COMMENT '录制时间',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of case
 -- ----------------------------
-INSERT INTO `case` VALUES ('1', '测试用例', '/bmc_hb/1.0/cate/list', 'post', '{\"type\":\"all\",\"belong_to\":\"1794900159\",\"group_type\":\"service\",\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', 'https://saas-test.banmacang.com/bmc_hb/1.0/cate/list?&user_id=1794900158&ts=1577518073&nonce=937063&menu_id=1810207793&sig=e8275aa2113e26413533bd7e711a4cddb93a9d97', '2019-12-28 15:27:53');
-INSERT INTO `case` VALUES ('2', '测试用例', '/bmc_hb/1.0/account/supplier_list', 'post', '{\"supplier_type\":\"supplier\",\"page\":1,\"pagesize\":10000,\"origin\":\"directly\",\"type\":\"all\",\"search\":\"\",\"sort\":\"desc\",\"belong_to\":\"1794900159\",\"group_type\":\"service\",\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', 'https://saas-test.banmacang.com/bmc_hb/1.0/account/supplier_list?&user_id=1794900158&ts=1577518073&nonce=928973&menu_id=1810207793&sig=66a29e14036bd55e0a9f20ee7f7ce5095726a4e5', '2019-12-28 15:27:53');
-INSERT INTO `case` VALUES ('3', '测试用例', '/bmc_hb/1.0/unit/list_all', 'post', '{\"type_group\":[\"brand\"],\"belong_to\":\"1794900159\",\"group_type\":\"service\",\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', 'https://saas-test.banmacang.com/bmc_hb/1.0/unit/list_all?&user_id=1794900158&ts=1577518073&nonce=327380&menu_id=1810207793&sig=5d57174b3ebb8d0f77c580f07ffae3e6b52537e2', '2019-12-28 15:27:53');
-INSERT INTO `case` VALUES ('4', '测试用例', '/bmc_hb/1.0/unit/list_label', 'post', '{\"group_type\":\"service\",\"belong_to\":\"1794900159\",\"page\":1,\"pagesize\":10000,\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', 'https://saas-test.banmacang.com/bmc_hb/1.0/unit/list_label?&user_id=1794900158&ts=1577518073&nonce=793269&menu_id=1810207793&sig=f663769ad4690797ae329ac52ed2bd720f26e99a', '2019-12-28 15:27:53');
-INSERT INTO `case` VALUES ('5', '测试用例', '/bmc_hb/1.0/goods/goods_list', 'post', '{\"belong_to\":\"1794900159\",\"create_type\":\"service\",\"status\":0,\"brand\":\"\",\"cate_id\":\"\",\"supplier_id\":\"\",\"level\":\"\",\"origin\":\"directly\",\"sort\":\"-ctime\",\"page\":1,\"pagesize\":10,\"name\":\"\",\"group_type\":\"service\",\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', 'https://saas-test.banmacang.com/bmc_hb/1.0/goods/goods_list?&user_id=1794900158&ts=1577518073&nonce=199052&menu_id=1810207793&sig=f33520c7e81caaaca31d18ceb2c02bafe8f98689', '2019-12-28 15:27:53');
-INSERT INTO `case` VALUES ('6', '测试用例', '/bmc_hb/1.0/account/login', 'post', '{\"account\":\"13296712612\",\"password\":\"2ae849ff090b7205566e268123473e700d6957ce\",\"belong_to\":0,\"group_type\":0,\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', 'https://saas-test.banmacang.com/bmc_hb/1.0/account/login?&user_id=0&ts=1577518324&nonce=771079&menu_id=1&sig=d898057dbc802d72e040e5b73e5ee68a330474f0', '2019-12-28 15:32:04');
-INSERT INTO `case` VALUES ('7', '测试用例', '/bmc_app/v1/auth/auth_list', 'get', '', 'https://saas-test.banmacang.com/bmc_app/v1/auth/auth_list?&belong_to=1794900159&group_type=service&sys_source=PC&sys_version=V2.2.1&user_id=1794900158&ts=1577518324&nonce=483753&menu_id=1&sig=a5f5d678615b221f44edbe6d8ed55f46c2a91822', '2019-12-28 15:32:05');
-INSERT INTO `case` VALUES ('8', '测试用例', '/bmc_app/v1/welcome/get_info', 'get', '', 'https://saas-test.banmacang.com/bmc_app/v1/welcome/get_info?&belong_to=1794900159&group_type=service&sys_source=PC&sys_version=V2.2.1&user_id=1794900158&ts=1577518324&nonce=584659&menu_id=1&sig=3733e1f221cdc48888b442dee03bac73e7a96f33', '2019-12-28 15:32:05');
+INSERT INTO `case` VALUES ('1', '测试用例', '/bmc_hb/1.0/account/add_supplier', 'post', 'https://saas-test.banmacang.com/bmc_hb/1.0/account/add_supplier?&user_id=1818700001&ts=1578450811&nonce=148151&menu_id=1810207805&sig=a653d422b22c8d52cd1514a65e89bc6136c704ce', '{\"account\":\"xiaoyan\",\"password\":\"2ae849ff090b7205566e268123473e700d6957ce\",\"supplier_name\":\"陈永建材批发\",\"phone\":\"15355009365\",\"region\":1271,\"province\":11,\"city\":123,\"address\":\"浙江省杭州市余杭区梦想小镇\",\"supplier_type\":\"service\",\"belong_to\":\"1818700002\",\"bank\":\"\",\"bank_name\":\"\",\"bank_num\":\"\",\"alipay_account\":\"\",\"weixin_account\":\"\",\"remark\":\"\",\"supplier_img\":\"\",\"contact_name\":\"陈永\",\"login_phone\":\"15355009365\",\"area_type\":\"\",\"regional\":[],\"group_type\":\"coc\",\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', null, '2020-01-08 10:33:31');
+INSERT INTO `case` VALUES ('2', '测试用例', '/bmc_hb/1.0/account/get_supplier_list', 'post', 'https://saas-test.banmacang.com/bmc_hb/1.0/account/get_supplier_list?&user_id=1818700001&ts=1578450817&nonce=976101&menu_id=1810207805&sig=0350263f6663a0b62d8cb421970335fd0df3edab', '{\"page\":1,\"pagesize\":10,\"sort\":\"desc\",\"role\":\"coc\",\"belong_to\":\"1818700002\",\"group_type\":\"coc\",\"sys_source\":\"PC\",\"sys_version\":\"V2.2.1\"}', null, '2020-01-08 10:33:37');
 
 -- ----------------------------
 -- Table structure for comments
