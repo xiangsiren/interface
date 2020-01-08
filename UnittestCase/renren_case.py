@@ -85,7 +85,7 @@ if __name__ == "__main__":
     suite.addTest(RenrenCase('test_banner'))
     suite.addTest(RenrenCase('test_login'))
     # file_path = base_path+'/Report/repor.html'
-    file_path = '/Users/ren/Desktop/web/python/interface/Report/report.html'
+    file_path = 'E:\python\interface\Report\\report.html'
     with open(file_path, 'wb') as f:
         # for line in f.readlines(): print(line.strip())  # 把末尾的'\n'删掉
         runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="this is test", description="bammacang test")
