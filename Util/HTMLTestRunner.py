@@ -186,9 +186,9 @@ class Template_mixin(object):
     2: '错误',
     }
 
-    DEFAULT_TITLE = '中试自动化测试报告'
-    DEFAULT_DESCRIPTION = ''
-    DEFAULT_TESTER='詹崇伟'
+    DEFAULT_TITLE = '接口自动化测试报告'
+    DEFAULT_DESCRIPTION = '默认人人'
+    DEFAULT_TESTER='慕容'
 
     # ------------------------------------------------------------------------
     # HTML Template

@@ -88,7 +88,7 @@ if __name__ == "__main__":
     file_path = 'E:\python\interface\Report\\report.html'
     with open(file_path, 'wb') as f:
         # for line in f.readlines(): print(line.strip())  # 把末尾的'\n'删掉
-        runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="this is test", description="bammacang test")
+        runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="斑马仓SaaS", description="bammacang 测试报告")
         runner.run(suite)
     f.close()
     #unittest.main()
