@@ -21,6 +21,7 @@ deepdiff = "*"
 ddt = "*"
 sqlalchemy = "*"
 mysql-connector = "*"
+appium-python-client = "*"
 
 [requires]
 python_version = "3.7"
