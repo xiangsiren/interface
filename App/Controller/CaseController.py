@@ -17,7 +17,7 @@ class GetData:
 
         self.request_url = flow.request.url
         # print("request_url:-------->", self.request_url)
-        if "saas-test.banmacang.com" in flow.request.url:
+        if "saas-test.banmacang.com/" in flow.request.url:
             request_headers = flow.request.headers
             path = flow.request.path.split(".")
             t = path[len(path) - 1]
