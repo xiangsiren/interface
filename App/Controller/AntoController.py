@@ -1,6 +1,6 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-from appium import webdriver
+# from appium import webdriver
 import sys
 import os
 import app
