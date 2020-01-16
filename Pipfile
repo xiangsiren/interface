@@ -22,6 +22,7 @@ ddt = "*"
 sqlalchemy = "*"
 mysql-connector = "*"
 appium-python-client = "*"
+mitmewb = "*"
 
 [requires]
 python_version = "3.7"
