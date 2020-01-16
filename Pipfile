@@ -23,6 +23,7 @@ sqlalchemy = "*"
 mysql-connector = "*"
 appium-python-client = "*"
 mitmewb = "*"
+appium = "*"
 
 [requires]
 python_version = "3.7"
