@@ -1,0 +1,298 @@
+2018-03-10 14:32:18:678 - info: [Appium] Welcome to Appium v1.7.1
+2018-03-10 14:32:18:682 - info: [Appium] Non-default server args:
+2018-03-10 14:32:18:682 - info: [Appium]   port: 4700
+2018-03-10 14:32:18:683 - info: [Appium]   bootstrapPort: 4916
+2018-03-10 14:32:18:683 - info: [Appium]   sessionOverride: true
+2018-03-10 14:32:18:683 - info: [Appium]   log: E:/Teacher/Imooc/AppiumPython/log/test02.log
+2018-03-10 14:32:18:683 - info: [Appium]   udid: 127.0.0.1:21503
+2018-03-10 14:32:18:684 - info: [Appium]   noReset: true
+2018-03-10 14:32:18:685 - warn: [Appium] Deprecated server args:
+2018-03-10 14:32:18:685 - warn: [Appium]   -U,--udid => --default-capabilities '{"udid":"127.0.0.1:21503"}'
+2018-03-10 14:32:18:686 - warn: [Appium]   --no-reset => --default-capabilities '{"noReset":true}'
+2018-03-10 14:32:18:686 - info: [Appium] Default capabilities, which will be added to each request unless overridden by desired capabilities:
+2018-03-10 14:32:18:696 - info: [Appium]   udid: '127.0.0.1:21503'
+2018-03-10 14:32:18:697 - info: [Appium]   noReset: true
+2018-03-10 14:32:18:732 - info: [Appium] Appium REST http interface listener started on 0.0.0.0:4700
+2018-03-10 14:32:31:688 - info: [HTTP] --> POST /wd/hub/session {"requiredCapabilities":{},"desiredCapabilities":{"deviceName":"127.0.0.1:21503","platforVersion":"4.4.4","app":"E:\\PythonAppium\\AutoTestAppium\\apps\\mukewang.apk","noReset":"true","appPackage":"cn.com.open.mooc","platformName":"Android","appWaitActivity":"cn.com.open.mooc.user.login.MCLoginActivity"}}
+2018-03-10 14:32:31:693 - info: [debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"deviceName":"127.0.0.1:21503","platforVersion":"4.4.4","app":"E:\\PythonAppium\\AutoTestAppium\\apps\\mukewang.apk","noReset":"true","appPackage":"cn.com.open.mooc","platformName":"Android","appWaitActivity":"cn.com.open.mooc.user.login.MCLoginActivity"},{},null]
+2018-03-10 14:32:31:695 - info: [debug] [BaseDriver] Event 'newSessionRequested' logged at 1520692351695 (22:32:31 GMT+0800 (中国标准时间))
+2018-03-10 14:32:31:699 - info: [Appium] Creating new AndroidDriver (v1.35.0) session
+2018-03-10 14:32:31:700 - info: [Appium] Capabilities:
+2018-03-10 14:32:31:700 - info: [Appium]   deviceName: '127.0.0.1:21503'
+2018-03-10 14:32:31:701 - info: [Appium]   platforVersion: '4.4.4'
+2018-03-10 14:32:31:701 - info: [Appium]   app: 'E:\\PythonAppium\\AutoTestAppium\\apps\\mukewang.apk'
+2018-03-10 14:32:31:701 - info: [Appium]   noReset: 'true'
+2018-03-10 14:32:31:702 - info: [Appium]   appPackage: 'cn.com.open.mooc'
+2018-03-10 14:32:31:702 - info: [Appium]   platformName: 'Android'
+2018-03-10 14:32:31:702 - info: [Appium]   appWaitActivity: 'cn.com.open.mooc.user.login.MCLoginActivity'
+2018-03-10 14:32:31:703 - info: [Appium]   udid: '127.0.0.1:21503'
+2018-03-10 14:32:31:716 - warn: [BaseDriver] Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+2018-03-10 14:32:31:725 - warn: [BaseDriver] The following capabilities were provided, but are not recognized by appium: platforVersion.
+2018-03-10 14:32:31:726 - info: [BaseDriver] Session created with session id: c5077931-6d54-47c1-a0a1-1087dff535b1
+2018-03-10 14:32:31:728 - info: [debug] [AndroidDriver] Getting Java version
+2018-03-10 14:32:32:045 - info: [AndroidDriver] Java version is: 1.8.0_121
+2018-03-10 14:32:32:052 - info: [ADB] Checking whether adb is present
+2018-03-10 14:32:32:059 - info: [ADB] Using adb.exe from D:\java\sdk\platform-tools\adb.exe
+2018-03-10 14:32:32:060 - info: [AndroidDriver] Retrieving device list
+2018-03-10 14:32:32:061 - info: [debug] [ADB] Trying to find a connected android device
+2018-03-10 14:32:32:062 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:32:137 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:32:138 - info: [AndroidDriver] Using device: 127.0.0.1:21503
+2018-03-10 14:32:32:140 - info: [ADB] Checking whether adb is present
+2018-03-10 14:32:32:143 - info: [ADB] Using adb.exe from D:\java\sdk\platform-tools\adb.exe
+2018-03-10 14:32:32:144 - info: [debug] [ADB] Setting device id to 127.0.0.1:21503
+2018-03-10 14:32:32:146 - info: [BaseDriver] Using local app 'E:\PythonAppium\AutoTestAppium\apps\mukewang.apk'
+2018-03-10 14:32:32:146 - info: [debug] [AndroidDriver] Checking whether app is actually present
+2018-03-10 14:32:32:149 - info: [AndroidDriver] Starting Android session
+2018-03-10 14:32:32:154 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","wait-for-device"]
+2018-03-10 14:32:32:274 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:32:354 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:32:355 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","echo","ping"]
+2018-03-10 14:32:32:434 - warn: [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2018-03-10 14:32:32:435 - warn: [AndroidDriver] Got language: 'null' and country: 'null'
+2018-03-10 14:32:32:437 - info: [debug] [Logcat] Starting logcat capture
+2018-03-10 14:32:32:517 - info: [debug] [AndroidDriver] Pushing settings apk to device...
+2018-03-10 14:32:32:520 - info: [debug] [ADB] Getting install status for io.appium.settings
+2018-03-10 14:32:32:521 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:32:672 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:32:673 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","pm","list","packages","io.appium.settings"]
+2018-03-10 14:32:33:287 - info: [debug] [ADB] App is installed
+2018-03-10 14:32:33:288 - info: [debug] [ADB] Getting package info for io.appium.settings
+2018-03-10 14:32:33:289 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:33:357 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:33:358 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","package","io.appium.settings"]
+2018-03-10 14:32:33:499 - info: [ADB] Checking whether aapt is present
+2018-03-10 14:32:33:503 - info: [ADB] Using aapt.exe from D:\java\sdk\tools\aapt.exe
+2018-03-10 14:32:33:556 - info: [debug] [ADB] The installed 'io.appium.settings' package does not require upgrade (5 >= 5)
+2018-03-10 14:32:33:559 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:33:656 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:33:656 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","getprop","ro.build.version.sdk"]
+2018-03-10 14:32:33:754 - info: [debug] [ADB] Current device property 'ro.build.version.sdk': 19
+2018-03-10 14:32:33:754 - info: [debug] [ADB] Device API level: 19
+2018-03-10 14:32:33:755 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:33:846 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:33:847 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","package","io.appium.settings"]
+2018-03-10 14:32:34:386 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:34:557 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:34:558 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","ps"]
+2018-03-10 14:32:34:663 - info: [debug] [ADB] Device API level: 19
+2018-03-10 14:32:34:664 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:34:779 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:34:780 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+2018-03-10 14:32:36:120 - info: [debug] [ADB] Device API level: 19
+2018-03-10 14:32:36:120 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:36:203 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:36:204 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","settings","put","secure","mock_location","1"]
+2018-03-10 14:32:36:871 - info: [debug] [AndroidDriver] Pushing unlock helper app to device...
+2018-03-10 14:32:36:871 - info: [debug] [ADB] Getting install status for io.appium.unlock
+2018-03-10 14:32:36:872 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:36:946 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:36:947 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","pm","list","packages","io.appium.unlock"]
+2018-03-10 14:32:37:497 - info: [debug] [ADB] App is installed
+2018-03-10 14:32:37:497 - info: [debug] [ADB] Getting package info for io.appium.unlock
+2018-03-10 14:32:37:497 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:37:575 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:37:576 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","package","io.appium.unlock"]
+2018-03-10 14:32:37:669 - info: [ADB] Checking whether aapt is present
+2018-03-10 14:32:37:689 - info: [ADB] Using aapt.exe from D:\java\sdk\tools\aapt.exe
+2018-03-10 14:32:37:737 - info: [debug] [ADB] The installed 'io.appium.unlock' package is older than 'D:\java\nodejs\node_gobal\node_modules\appium\node_modules\_appium-unlock@2.0.0@appium-unlock\bin\unlock_apk-debug.apk' (1 < 2). Executing upgrade
+2018-03-10 14:32:37:738 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","install","-r","D:\\java\\nodejs\\node_gobal\\node_modules\\appium\\node_modules\\_appium-unlock@2.0.0@appium-unlock\\bin\\unlock_apk-debug.apk"]
+2018-03-10 14:32:38:446 - info: [ADB] Getting device platform version
+2018-03-10 14:32:38:447 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:38:545 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:38:546 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","getprop","ro.build.version.release"]
+2018-03-10 14:32:38:619 - info: [debug] [ADB] Current device property 'ro.build.version.release': 4.4.4
+2018-03-10 14:32:38:620 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:38:725 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:38:725 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","wm","size"]
+2018-03-10 14:32:39:212 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:39:288 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:39:289 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","getprop","ro.product.model"]
+2018-03-10 14:32:39:379 - info: [debug] [ADB] Current device property 'ro.product.model': MI 5s
+2018-03-10 14:32:39:380 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:39:462 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:39:463 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","getprop","ro.product.manufacturer"]
+2018-03-10 14:32:39:578 - info: [debug] [ADB] Current device property 'ro.product.manufacturer': Xiaomi
+2018-03-10 14:32:39:579 - info: [debug] [AndroidDriver] Parsing package and activity from app manifest
+2018-03-10 14:32:39:581 - info: [ADB] Checking whether aapt is present
+2018-03-10 14:32:39:591 - info: [ADB] Using aapt.exe from D:\java\sdk\tools\aapt.exe
+2018-03-10 14:32:39:591 - info: [ADB] Extracting package and launch activity from manifest
+2018-03-10 14:32:39:639 - info: [debug] [ADB] badging package: cn.com.open.mooc
+2018-03-10 14:32:39:639 - info: [debug] [ADB] badging act: cn.com.open.mooc.index.splash.MCSplashActivity
+2018-03-10 14:32:39:640 - info: [debug] [AndroidDriver] Parsed package and activity are: cn.com.open.mooc/cn.com.open.mooc.index.splash.MCSplashActivity
+2018-03-10 14:32:39:791 - info: [AndroidDriver] Remote apk path is /data/local/tmp/ad752f3781627681e20bb657ecc49d28.apk
+2018-03-10 14:32:39:792 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:39:891 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:39:891 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","ls","/data/local/tmp/ad752f3781627681e20bb657ecc49d28.apk"]
+2018-03-10 14:32:40:072 - info: [debug] [AndroidDriver] Checking if app is installed
+2018-03-10 14:32:40:072 - info: [debug] [ADB] Getting install status for cn.com.open.mooc
+2018-03-10 14:32:40:073 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:40:191 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:40:192 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","pm","list","packages","cn.com.open.mooc"]
+2018-03-10 14:32:40:779 - info: [debug] [ADB] App is installed
+2018-03-10 14:32:40:780 - info: [debug] [AndroidDriver] Extracting strings from apk E:\PythonAppium\AutoTestAppium\apps\mukewang.apk null C:\Users\KYB\AppData\Local\Temp\cn.com.open.mooc
+2018-03-10 14:32:40:781 - info: [debug] [ADB] Extracting strings for language: default
+2018-03-10 14:32:40:782 - info: [debug] [ADB] Device API level: 19
+2018-03-10 14:32:40:782 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:40:873 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:40:874 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","getprop","persist.sys.language"]
+2018-03-10 14:32:41:014 - info: [debug] [ADB] Current device property 'persist.sys.language': zh
+2018-03-10 14:32:42:438 - info: [debug] [ADB] No strings.xml for language 'zh', getting default strings.xml
+2018-03-10 14:32:43:716 - info: [debug] [ADB] Reading strings from converted strings.json
+2018-03-10 14:32:43:724 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","push","C:\\Users\\KYB\\AppData\\Local\\Temp\\cn.com.open.mooc\\strings.json","/data/local/tmp"]
+2018-03-10 14:32:43:870 - info: [debug] [AndroidBootstrap] Watching for bootstrap disconnect
+2018-03-10 14:32:43:872 - info: [debug] [ADB] Forwarding system: 4916 to device: 4724
+2018-03-10 14:32:43:873 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","forward","tcp:4916","tcp:4724"]
+2018-03-10 14:32:43:898 - info: [debug] [UiAutomator] Starting UiAutomator
+2018-03-10 14:32:43:898 - info: [debug] [UiAutomator] Moving to state 'starting'
+2018-03-10 14:32:43:899 - info: [debug] [UiAutomator] Parsing uiautomator jar
+2018-03-10 14:32:43:900 - info: [debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+2018-03-10 14:32:43:900 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","push","D:\\java\\nodejs\\node_gobal\\node_modules\\appium\\node_modules\\_appium-android-bootstrap@2.10.0@appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar","/data/local/tmp/"]
+2018-03-10 14:32:44:048 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-03-10 14:32:44:049 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-03-10 14:32:44:049 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:44:140 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:44:141 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","ps"]
+2018-03-10 14:32:44:232 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-03-10 14:32:44:232 - info: [debug] [UiAutomator] Starting UIAutomator
+2018-03-10 14:32:44:233 - info: [debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","127.0.0.1:21503","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","cn.com.open.mooc","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+2018-03-10 14:32:44:564 - info: [debug] [UiAutomator] Moving to state 'online'
+2018-03-10 14:32:44:595 - info: [AndroidBootstrap] Android bootstrap socket is now connected
+2018-03-10 14:32:44:597 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:44:615 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+2018-03-10 14:32:44:616 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+2018-03-10 14:32:44:617 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+2018-03-10 14:32:44:674 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:44:675 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","window"]
+2018-03-10 14:32:44:810 - info: [AndroidDriver] Screen already unlocked, doing nothing
+2018-03-10 14:32:44:811 - info: [debug] [ADB] Device API level: 19
+2018-03-10 14:32:44:812 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:44:897 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:44:898 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","am","start","-W","-n","cn.com.open.mooc/cn.com.open.mooc.index.splash.MCSplashActivity","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+2018-03-10 14:32:46:847 - info: [debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'cn.com.open.mooc' and activity: 'cn.com.open.mooc.user.login.MCLoginActivity' to be focused
+2018-03-10 14:32:46:847 - info: [debug] [ADB] Possible activities, to be checked: 'cn.com.open.mooc.user.login.MCLoginActivity'
+2018-03-10 14:32:46:850 - info: [debug] [ADB] Getting focused package and activity
+2018-03-10 14:32:46:851 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:46:957 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:46:958 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","window","windows"]
+2018-03-10 14:32:47:497 - info: [debug] [ADB] Found package: 'cn.com.open.mooc' and fully qualified activity name : 'cn.com.open.mooc.index.splash.MCSplashActivity'
+2018-03-10 14:32:47:498 - info: [debug] [ADB] Incorrect package and activity. Retrying.
+2018-03-10 14:32:48:251 - info: [debug] [ADB] Getting focused package and activity
+2018-03-10 14:32:48:252 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:48:365 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:48:366 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","window","windows"]
+2018-03-10 14:32:48:878 - info: [debug] [ADB] Found package: 'cn.com.open.mooc' and fully qualified activity name : 'cn.com.open.mooc.index.splash.MCSplashActivity'
+2018-03-10 14:32:48:878 - info: [debug] [ADB] Incorrect package and activity. Retrying.
+2018-03-10 14:32:49:629 - info: [debug] [ADB] Getting focused package and activity
+2018-03-10 14:32:49:629 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:32:49:694 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:32:49:695 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","window","windows"]
+2018-03-10 14:32:49:945 - info: [debug] [ADB] Found package: 'cn.com.open.mooc' and fully qualified activity name : 'cn.com.open.mooc.user.login.MCLoginActivity'
+2018-03-10 14:32:49:947 - info: [Appium] New AndroidDriver session created successfully, session c5077931-6d54-47c1-a0a1-1087dff535b1 added to master session list
+2018-03-10 14:32:49:948 - info: [debug] [BaseDriver] Event 'newSessionStarted' logged at 1520692369948 (22:32:49 GMT+0800 (中国标准时间))
+2018-03-10 14:32:49:949 - info: [debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"127.0.0.1:21503","platforVersion":"4.4.4","app":"E:\\PythonAppium\\AutoTestAppium\\apps\\mukewang.apk","noReset":true,"appPackage":"cn.com.open.mooc","platformName":"Android","appWaitActivity":"cn.com.open.mooc.user.login.MCLoginActivity","udid":"127.0.0.1:21503"},"deviceName":"127.0.0.1:21503","platforVersion":"4.4.4","app":"E:\\PythonAppium\\AutoTestAppium\\apps\\mukewang.apk","noReset":true,"appPackage":"cn.com.open.mooc","platformName":"Android","appWaitActivity":"cn.com.open.mooc.user.login.MCLoginActivity","udid":"127.0.0.1:21503","deviceUDID":"127.0.0.1:21503","platformVersion":"4.4.4","deviceScreenSize":"1280x720","deviceModel":"MI 5s","deviceManufacturer":"Xiaomi","appWaitPackage":"cn.com.open.mooc","appActivity":"cn.com.open.mooc.index.splash.MCSplashActivity"}
+2018-03-10 14:32:49:957 - info: [HTTP] <-- POST /wd/hub/session 200 18264 ms - 1073 
+2018-03-10 14:32:59:986 - info: [HTTP] --> POST /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/element {"using":"id","sessionId":"c5077931-6d54-47c1-a0a1-1087dff535b1","value":"cn.com.open.mooc:id/account_edit1"}
+2018-03-10 14:32:59:989 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","cn.com.open.mooc:id/account_edit1","c5077931-6d54-47c1-a0a1-1087dff535b1"]
+2018-03-10 14:32:59:992 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-03-10 14:32:59:994 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-03-10 14:32:59:994 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-03-10 14:32:59:998 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"cn.com.open.mooc:id/account_edit1","context":"","multiple":false}}
+2018-03-10 14:33:00:021 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"cn.com.open.mooc:id/account_edit1","context":"","multiple":false}}
+2018-03-10 14:33:00:022 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-03-10 14:33:00:022 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-03-10 14:33:00:023 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'cn.com.open.mooc:id/account_edit1' using 'ID' with the contextId: '' multiple: false
+2018-03-10 14:33:00:023 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=cn.com.open.mooc:id/account_edit1]
+2018-03-10 14:33:00:132 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-03-10 14:33:00:133 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'cn.com.open.mooc:id/account_edit1' using 'ID' with the contextId: '' multiple: false
+2018-03-10 14:33:00:133 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=cn.com.open.mooc:id/account_edit1]
+2018-03-10 14:33:00:244 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"No element found","status":7}
+2018-03-10 14:33:00:245 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-03-10 14:33:00:254 - info: [HTTP] <-- POST /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/element 500 267 ms - 164 
+2018-03-10 14:33:01:283 - info: [HTTP] --> GET /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/screenshot {}
+2018-03-10 14:33:01:284 - info: [debug] [MJSONWP] Calling AppiumDriver.getScreenshot() with args: ["c5077931-6d54-47c1-a0a1-1087dff535b1"]
+2018-03-10 14:33:01:286 - info: [debug] [ADB] Device API level: 19
+2018-03-10 14:33:01:290 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:33:01:433 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:33:01:433 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","/system/bin/rm","/data/local/tmp/screenshot.png;","/system/bin/screencap","-p","/data/local/tmp/screenshot.png"]
+2018-03-10 14:33:02:326 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:33:02:466 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:33:02:466 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","ls","-la","/data/local/tmp/screenshot.png"]
+2018-03-10 14:33:02:637 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","pull","/data/local/tmp/screenshot.png","C:\\Users\\KYB\\AppData\\Local\\Temp\\appium118210-46212-cp4on4.auyl.png"]
+2018-03-10 14:33:03:832 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:33:03:957 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:33:03:959 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","input"]
+2018-03-10 14:33:04:663 - info: [debug] [MJSONWP] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAACAAElEQVR4AezhTcumi8Ln5R3/c+1npJMojpyJKAaxRWciviEqMYEkpDMSVBBxJKI4EUUQRGzEieA3EUcZiO9EpFvjNzCBDBypYLdPnT+v87rqfqu6q1bV2mvt/bTUceyv/xv+xrbDNsfxkx2Hn46fHMdPjp9+chw/OY6fHMdPjuMnOw7Hcdjxk2OHHYdjh212HGZsNjfzP/4P/70dhyfzULlsc2w2b2wHozPGdqgoOw5KhXxNcZbN3ZnP7DgolZ8zbBTbHMdhm8s2l9NcJm22w/HTn5jodO4n7fAnB8WfRpuVow8+fPhf/ZU//SvOD6fzw+lDp/NM54mEztNlm9eOzXEc2swcx3Se/vTDB08qT7Yp6lTk6yqXbc6SzEOYuRyb5CyfmkmeDDNJPjdsh6GSXI4dLpXkcuxwqWxzqVy2ec9ZksOE5FvMzFvbnCV5bWbel4dkZtjmSeVyypOKsuPwZOaSfElF+R5/7u/42z3bXGYuiXK3eVYu24FUfk7I54Y8zEM+N2xzOcsbUZG7bQzzInd/6b/9//hzf8ff7o08DHkYonxmo7yxYe463USYm1HuNuQujG3K3eYz5W6jPJRv9Rf/m//W72fIi7FRHvLD9yt3echf/YYh5GHYZpu7crd5cpZL5bdybC7bVC5neW3YcZj3VSr5sm2Oza+tcjnL12xzOTZfUwmVYZttQucp32abY1O57Dgw29gwNm/FGXK3g82TmXk4ZZipU8UxQicb5tghqVxmdszMk1Cny8w2l8plm0oYNrbZ5nIWuTvPDyqOmZnZ5rVKcplJ6rQdhvM8GXZQnsxsU6eKY5jLsZn5VKgTc2zOkjwZ8mLm2FSehOQybAedzk5yV6fLNpXXtqmE8sawY+a1OY5DUScbm4coNndnKmd5MmxsY1PUqdzNw+YubHM5zwwbmUvljXHskHSmctnmrXTmbrMN6TzZbIfKZZsnlcs2T+okdoxS...
+2018-03-10 14:33:04:674 - info: [HTTP] <-- GET /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/screenshot 200 3391 ms - 483990 
+2018-03-10 14:33:04:772 - info: [HTTP] --> POST /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/element {"using":"id","sessionId":"c5077931-6d54-47c1-a0a1-1087dff535b1","value":"cn.com.open.mooc:id/account_edit1"}
+2018-03-10 14:33:04:772 - info: [debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","cn.com.open.mooc:id/account_edit1","c5077931-6d54-47c1-a0a1-1087dff535b1"]
+2018-03-10 14:33:04:773 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-03-10 14:33:04:773 - info: [debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2018-03-10 14:33:04:774 - info: [debug] [BaseDriver] Waiting up to 0 ms for condition
+2018-03-10 14:33:04:775 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"cn.com.open.mooc:id/account_edit1","context":"","multiple":false}}
+2018-03-10 14:33:04:787 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"cn.com.open.mooc:id/account_edit1","context":"","multiple":false}}
+2018-03-10 14:33:04:801 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+2018-03-10 14:33:04:801 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+2018-03-10 14:33:04:802 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'cn.com.open.mooc:id/account_edit1' using 'ID' with the contextId: '' multiple: false
+2018-03-10 14:33:04:802 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=cn.com.open.mooc:id/account_edit1]
+2018-03-10 14:33:04:854 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2018-03-10 14:33:04:854 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'cn.com.open.mooc:id/account_edit1' using 'ID' with the contextId: '' multiple: false
+2018-03-10 14:33:04:855 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=cn.com.open.mooc:id/account_edit1]
+2018-03-10 14:33:04:871 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-03-10 14:33:04:874 - info: [HTTP] <-- POST /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/element 500 101 ms - 164 
+2018-03-10 14:33:04:874 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"No element found","status":7}
+2018-03-10 14:33:05:896 - info: [HTTP] --> GET /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/screenshot {}
+2018-03-10 14:33:05:896 - info: [debug] [MJSONWP] Calling AppiumDriver.getScreenshot() with args: ["c5077931-6d54-47c1-a0a1-1087dff535b1"]
+2018-03-10 14:33:05:897 - info: [debug] [ADB] Device API level: 19
+2018-03-10 14:33:05:900 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:33:06:018 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:33:06:019 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","/system/bin/rm","/data/local/tmp/screenshot.png;","/system/bin/screencap","-p","/data/local/tmp/screenshot.png"]
+2018-03-10 14:33:06:934 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:33:07:051 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:33:07:052 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","ls","-la","/data/local/tmp/screenshot.png"]
+2018-03-10 14:33:07:157 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","pull","/data/local/tmp/screenshot.png","C:\\Users\\KYB\\AppData\\Local\\Temp\\appium118210-46212-y2hnf5.16s3c.png"]
+2018-03-10 14:33:07:825 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:33:07:940 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:33:07:940 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","dumpsys","input"]
+2018-03-10 14:33:08:450 - info: [debug] [MJSONWP] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABQAAAALQCAYAAADPfd1WAACAAElEQVR4AezhTcumi8Ln5R3/c+1npJMojpyJKAaxRWciviEqMYEkpDMSVBBxJKI4EUUQRGzEieA3EUcZiO9EpFvjNzCBDBypYLdPnT+v87rqfqu6q1bV2mvt/bTUceyv/xv+xrbDNsfxkx2Hn46fHMdPjp9+chw/OY6fHMdPjuMnOw7Hcdjxk2OHHYdjh212HGZsNjfzP/4P/70dhyfzULlsc2w2b2wHozPGdqgoOw5KhXxNcZbN3ZnP7DgolZ8zbBTbHMdhm8s2l9NcJm22w/HTn5jodO4n7fAnB8WfRpuVow8+fPhf/ZU//SvOD6fzw+lDp/NM54mEztNlm9eOzXEc2swcx3Se/vTDB08qT7Yp6lTk6yqXbc6SzEOYuRyb5CyfmkmeDDNJPjdsh6GSXI4dLpXkcuxwqWxzqVy2ec9ZksOE5FvMzFvbnCV5bWbel4dkZtjmSeVyypOKsuPwZOaSfElF+R5/7u/42z3bXGYuiXK3eVYu24FUfk7I54Y8zEM+N2xzOcsbUZG7bQzzInd/6b/9//hzf8ff7o08DHkYonxmo7yxYe463USYm1HuNuQujG3K3eYz5W6jPJRv9Rf/m//W72fIi7FRHvLD9yt3echf/YYh5GHYZpu7crd5cpZL5bdybC7bVC5neW3YcZj3VSr5sm2Oza+tcjnL12xzOTZfUwmVYZttQucp32abY1O57Dgw29gwNm/FGXK3g82TmXk4ZZipU8UxQicb5tghqVxmdszMk1Cny8w2l8plm0oYNrbZ5nIWuTvPDyqOmZnZ5rVKcplJ6rQdhvM8GXZQnsxsU6eKY5jLsZn5VKgTc2zOkjwZ8mLm2FSehOQybAedzk5yV6fLNpXXtqmE8sawY+a1OY5DUScbm4coNndnKmd5MmxsY1PUqdzNw+YubHM5zwwbmUvljXHskHSmctnmrXTmbrMN6TzZbIfKZZsnlcs2T+okdoxS...
+2018-03-10 14:33:08:463 - info: [HTTP] <-- GET /wd/hub/session/c5077931-6d54-47c1-a0a1-1087dff535b1/screenshot 200 2565 ms - 484034 
+2018-03-10 14:34:08:449 - warn: [BaseDriver] Shutting down because we waited 60 seconds for a command
+2018-03-10 14:34:08:453 - info: [debug] [AndroidDriver] Shutting down Android driver
+2018-03-10 14:34:08:454 - warn: [Appium] Closing session, cause was 'New Command Timeout of 60 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+2018-03-10 14:34:08:454 - info: [Appium] Removing session c5077931-6d54-47c1-a0a1-1087dff535b1 from our master session list
+2018-03-10 14:34:08:456 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:34:08:519 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:34:08:519 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","am","force-stop","cn.com.open.mooc"]
+2018-03-10 14:34:09:066 - info: [debug] [ADB] Pressing the HOME button
+2018-03-10 14:34:09:067 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:34:09:160 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:34:09:160 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","input","keyevent",3]
+2018-03-10 14:34:09:713 - info: [debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+2018-03-10 14:34:09:723 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+2018-03-10 14:34:09:724 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+2018-03-10 14:34:09:724 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"value":"OK, shutting down","status":0}
+2018-03-10 14:34:09:725 - info: [debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Closed client connection
+2018-03-10 14:34:09:725 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2018-03-10 14:34:09:725 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: stream=.
+2018-03-10 14:34:09:725 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2018-03-10 14:34:09:725 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2018-03-10 14:34:09:726 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2018-03-10 14:34:09:726 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS: current=1
+2018-03-10 14:34:09:726 - info: [debug] [AndroidBootstrap] [UIAUTO STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2018-03-10 14:34:09:727 - info: [debug] [AndroidBootstrap] Received command result from bootstrap
+2018-03-10 14:34:09:728 - info: [debug] [UiAutomator] Shutting down UiAutomator
+2018-03-10 14:34:09:729 - info: [debug] [UiAutomator] Moving to state 'stopping'
+2018-03-10 14:34:09:737 - info: [debug] [UiAutomator] UiAutomator shut down normally
+2018-03-10 14:34:09:737 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-03-10 14:34:09:738 - info: [debug] [ADB] Attempting to kill all uiautomator processes
+2018-03-10 14:34:09:738 - info: [debug] [ADB] Getting all processes with uiautomator
+2018-03-10 14:34:09:739 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:34:09:824 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:34:09:825 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","ps"]
+2018-03-10 14:34:09:931 - info: [ADB] No uiautomator process found to kill, continuing...
+2018-03-10 14:34:09:931 - info: [debug] [UiAutomator] Moving to state 'stopped'
+2018-03-10 14:34:09:932 - info: [debug] [Logcat] Stopping logcat capture
+2018-03-10 14:34:09:958 - info: [debug] [ADB] Getting connected devices...
+2018-03-10 14:34:10:062 - info: [debug] [ADB] 1 device(s) connected
+2018-03-10 14:34:10:062 - info: [debug] [ADB] Running 'D:\java\sdk\platform-tools\adb.exe' with args: ["-P",5037,"-s","127.0.0.1:21503","shell","am","force-stop","io.appium.unlock"]
+2018-03-10 14:34:10:659 - info: [debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
