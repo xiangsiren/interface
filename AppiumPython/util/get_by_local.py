@@ -1,5 +1,5 @@
 #coding=utf-8
-from read_init import ReadIni
+from AppiumPython.util.read_init import ReadIni
 class GetByLocal:
 	def __init__(self,driver):
 		self.driver = driver
