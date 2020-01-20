@@ -24,6 +24,7 @@ mysql-connector = "*"
 appium-python-client = "*"
 mitmewb = "*"
 appium = "*"
+configparser = "*"
 
 [requires]
 python_version = "3.7"
