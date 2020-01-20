@@ -1,5 +1,5 @@
 #coding=utf-8
-from handle.login_handle import LoginHandle
+from AppiumPython.handle.login_handle import LoginHandle
 class LoginBusiness:
 	def __init__(self,i):
 		self.login_handle = LoginHandle(i)
