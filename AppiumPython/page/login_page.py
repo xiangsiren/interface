@@ -1,7 +1,7 @@
 #coding=utf-8
-from util.get_by_local import GetByLocal
+from AppiumPython.util.get_by_local import GetByLocal
 import time
-from base.base_driver import BaseDriver
+from AppiumPython.base.base_driver import BaseDriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
