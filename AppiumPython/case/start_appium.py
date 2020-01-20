@@ -1,19 +1,19 @@
 #coding=utf-8
 import sys
-sys.path.append('E:/Teacher/Imooc/AppiumPython')
+sys.path.append('/Users/ren/Desktop/web/python/interface/AppiumPython')
 from appium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-from util.read_init import ReadIni
-from util.get_by_local import GetByLocal
+from AppiumPython.util.read_init import ReadIni
+from AppiumPython.util.get_by_local import GetByLocal
 def get_driver():
 	capabilities = {
 	  "platformName": "Android",
 	  #"automationName":"UiAutomator2",
-	  "deviceName": "127.0.0.1:21503",
-	  "app": "E:\\PythonAppium\\AutoTestAppium\\apps\\mukewang.apk",
-	  "appWaitActivity":"cn.com.open.mooc.user.register.MCPhoneRegisterAty",
+	  "deviceName": "MUMU home",
+	  "app": "/Users/ren/Documents/new_app_versionName_3.8.1_versionCode_38_packageTest_debug.apk",
+	  # "appWaitActivity":"com.bckj.banmacang.activity.SplashActivity",
 	  "noReset":"true"
 	}
 	driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",capabilities)
@@ -70,7 +70,7 @@ def swipe_on(direction):
 		swipe_right()
 
 def go_login():
-	print driver.find_element_by_id('cn.com.open.mooc:id/tv_go_login')
+	print(driver.find_element_by_id('cn.com.open.mooc:id/tv_go_login'))
 	driver.find_element_by_id('cn.com.open.mooc:id/tv_go_login').click()
 
 def login():
@@ -83,7 +83,7 @@ def login():
 
 def login_by_class():
 	element = driver.find_element_by_class_name('android.widget.TextView')
-	print element
+	print(element)
 	elements = driver.find_elements_by_class_name('android.widget.TextView')
 	elements[4].click()
 	#element.click()
@@ -122,7 +122,7 @@ def get_web_view():
 		driver.switch_to.context(webview[0])
 		driver.find_element_by_id('cn.com.open.mooc:id/left_icon').click()
 		raise e
-	print webview
+	print(webview)
 
 def get_tost():
 	time.sleep(2)
