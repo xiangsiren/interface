@@ -76,16 +76,23 @@ def go_login():
 def login():
 	get_by_local = GetByLocal(driver)	
 	user_element = get_by_local.get_element('username')
-	user_element.send_keys('18513199586')
+	user_element.send_keys('libai123')
 	
-	get_by_local.get_element('password').send_keys('111111')
+	get_by_local.get_element('password').send_keys('123456')
 	get_by_local.get_element('login_button').click()
 
 def login_by_class():
-	element = driver.find_element_by_class_name('android.widget.TextView')
+	element = driver.find_elements_by_class_name('android.widget.EditText')
+	print("444444444")
 	print(element)
+	print("55555555")
+	element[0].send_keys('libai123')
+	element[1].send_keys('123456')
 	elements = driver.find_elements_by_class_name('android.widget.TextView')
-	elements[4].click()
+	print("666666666")
+	print(elements)
+	print("777777777777")
+	elements[3].click()
 	#element.click()
 
 def login_by_node():
@@ -97,9 +104,9 @@ def login_by_node():
 
 
 def login_by_uiautomator():
-	driver.find_element_by_android_uiautomator('new UiSelector().text("18513199586")').clear()
-	driver.find_element_by_android_uiautomator('new UiSelector().text("手机号/邮箱")').send_keys('18513199587')
-	driver.find_element_by_android_uiautomator('new UiSelector().resourceId("cn.com.open.mooc:id/password_edit")').send_keys('111111')
+	# driver.find_element_by_android_uiautomator('new UiSelector().text("libai123")').clear()
+	driver.find_element_by_android_uiautomator('new UiSelector().text("请输入您的登录账号")').send_keys('libai123')
+	driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.bckj.banmacang:id/et_login_password")').send_keys('111111')
 
 def login_by_xpath():
 	#driver.find_element_by_xpath('//*[contains(@text,"忘记")]').click()
@@ -141,7 +148,8 @@ driver =get_driver()
 #time.sleep(1)
 #swipe_on('up')
 #time.sleep(10)
-#login_by_class()
+# login_by_class()
 #login_by_xpath()
 #get_tost()
-login()
+# login()
+login_by_uiautomator()
