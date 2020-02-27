@@ -2,7 +2,7 @@
 import sys
 import time
 
-sys.path.append('E:\\Teacher\\Imooc\\SeleniumPythonBase')
+sys.path.append('/Users/ren/Desktop/web/python/interface/seleniumPython')
 from selenium import webdriver
 from pykeyboard import PyKeyboard
 from ThreeNode.read_init import read_ini
