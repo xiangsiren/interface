@@ -22,3 +22,5 @@ Monkeyrunner缺点：
 1、monkeyrunner本身存在bug，长时间跑，自身也会出现crash
 2、monkeyrunner无论导入什么库，都是app层的，黑盒测试，相当于android ui layout上又架了一层，模拟点击操作
 ```
+-------
+
