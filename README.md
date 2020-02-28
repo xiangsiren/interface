@@ -16,7 +16,9 @@ selleniumPython web自动化测试
 
 5. Selenium是一个用于Web应用程序测试的工具。Selenium测试直接运行在浏览器中，就像真正的用户在操作一样。
 
-6. monkeyrunner工具同Monkey工具的差别:
+6. mitmproxy 就是用于 MITM 的 proxy，MITM 即中间人攻击（Man-in-the-middle attack）。用于中间人攻击的代理首先会向正常的代理一样转发请求，保障服务端与客户端的通信，其次，会适时的查、记录其截获的数据，或篡改数据，引发服务端或客户端特定的行为。
+
+7. monkeyrunner工具同Monkey工具的差别:
 
 - Monkey：
 Monkey工具直接运行在设备或模拟器的adb shell中，生成用户或系统的伪随机事件流。
@@ -26,7 +28,6 @@ monkeyrunner工具则是在工作站上通过API定义的特定命令和事件�
 - Monkeyrunner缺点：
 1、monkeyrunner本身存在bug，长时间跑，自身也会出现crash
 2、monkeyrunner无论导入什么库，都是app层的，黑盒测试，相当于android ui layout上又架了一层，模拟点击操作
-
 
 
 
