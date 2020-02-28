@@ -1,6 +1,13 @@
 ## Interface
 
 接口自动化测试脚本
+```text
+测试过程：
+    1.向测试数据库插入测试数据（一般使用测试数据库，不对真实数据库造成污染）;
+    2.调用被测系统接口；
+    3.接口对数据进行处理，并返回结果；
+    4.通过python中的unittest单元测试框架断言接口返回的数据，并生成测试报告。
+```
 
 AppiumPython  客户端自动化测试
 
@@ -18,8 +25,9 @@ selleniumPython web自动化测试
 
 6. mitmproxy 就是用于 MITM 的 proxy，MITM 即中间人攻击（Man-in-the-middle attack）。用于中间人攻击的代理首先会向正常的代理一样转发请求，保障服务端与客户端的通信，其次，会适时的查、记录其截获的数据，或篡改数据，引发服务端或客户端特定的行为。
 
-7. monkeyrunner工具同Monkey工具的差别:
+7. HTMLTestRunner 为unittest单元测试框架的扩展，利用它所提供的HTMLTestRunner()类来替换unittest单元测试框架的TextTestRunner()类，从而生成HTML格式的测试报告。
 
+8. monkeyrunner工具同Monkey工具的差别:
 - Monkey：
 Monkey工具直接运行在设备或模拟器的adb shell中，生成用户或系统的伪随机事件流。
 monkeyrunner：
