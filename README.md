@@ -26,8 +26,13 @@ selleniumPython web自动化测试
 6. mitmproxy 就是用于 MITM 的 proxy，MITM 即中间人攻击（Man-in-the-middle attack）。用于中间人攻击的代理首先会向正常的代理一样转发请求，保障服务端与客户端的通信，其次，会适时的查、记录其截获的数据，或篡改数据，引发服务端或客户端特定的行为。
 
 7. HTMLTestRunner 为unittest单元测试框架的扩展，利用它所提供的HTMLTestRunner()类来替换unittest单元测试框架的TextTestRunner()类，从而生成HTML格式的测试报告。
+8.Monkey是Android SDK提供的一个命令行工具，可以简单方便的发送伪随机的用户事件流，对Android APP做压力（稳定性）测试。主要是为了测试app是否存在无响应和崩溃的情况。
 
-8. monkeyrunner工具同Monkey工具的差别:
+
+
+
+11. monkeyrunner工具同Monkey工具的差别:
+
 - Monkey：
 Monkey工具直接运行在设备或模拟器的adb shell中，生成用户或系统的伪随机事件流。
 monkeyrunner：
