@@ -31,12 +31,10 @@ selleniumPython web自动化测试
 
 
 
-11. monkeyrunner工具同Monkey工具的差别:
+11. monkeyrunner与Monkey:
 
-- Monkey：
-Monkey工具直接运行在设备或模拟器的adb shell中，生成用户或系统的伪随机事件流。
-monkeyrunner：
-monkeyrunner工具则是在工作站上通过API定义的特定命令和事件控制设备或模拟器。
+- Monkey： android系统中自带的黑盒测试工具。一般通过随机触发界面事件，来确定应用是否会发生异常，多用于android应用的稳定性,压力测试。
+- monkeyrunner：android SDK中自带的黑盒测试工具，在PC端通过android api 控制设备的运行，支持python脚本，可以实现monkey无法实现的逻辑功能
  
 - Monkeyrunner缺点：
 1、monkeyrunner本身存在bug，长时间跑，自身也会出现crash
