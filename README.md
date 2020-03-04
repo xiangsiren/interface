@@ -27,13 +27,14 @@ selleniumPython web自动化测试
 
 7. HTMLTestRunner 为unittest单元测试框架的扩展，利用它所提供的HTMLTestRunner()类来替换unittest单元测试框架的TextTestRunner()类，从而生成HTML格式的测试报告。
 8. UIAutomator UI自动化测试，模拟操作，android4.1后推出。权限较低有些系统api不能调用。缺点：1. 测试脚本只能使用Java语言 2. 测试脚本要打包成jar或者apk包上传到设备上才能运行。
-9. instrumentation 主要是用于单元测试
-10.Monkey是Android SDK提供的一个命令行工具，可以简单方便的发送伪随机的用户事件流，对Android APP做压力（稳定性）测试。主要是为了测试app是否存在无响应和崩溃的情况。
+9. uiautomator2是一个可以使用Python对Android设备进行UI自动化的库。
+10. instrumentation 主要是用于单元测试
+11.Monkey是Android SDK提供的一个命令行工具，可以简单方便的发送伪随机的用户事件流，对Android APP做压力（稳定性）测试。主要是为了测试app是否存在无响应和崩溃的情况。
 
 
 
 
-11. monkeyrunner与Monkey:
+12. monkeyrunner与Monkey:
 
 - Monkey： android系统中自带的黑盒测试工具。一般通过随机触发界面事件，来确定应用是否会发生异常，多用于android应用的稳定性,压力测试。
 - monkeyrunner：android SDK中自带的黑盒测试工具，在PC端通过android api 控制设备的运行，支持python脚本，可以实现monkey无法实现的逻辑功能

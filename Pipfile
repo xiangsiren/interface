@@ -25,6 +25,12 @@ appium-python-client = "*"
 mitmewb = "*"
 appium = "*"
 configparser = "*"
+uiautomator2 = "*"
+pillow = "*"
+weditor = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
