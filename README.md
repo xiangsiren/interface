@@ -31,7 +31,7 @@ selleniumPython web自动化测试
 10. instrumentation 主要是用于单元测试
 11.Monkey是Android SDK提供的一个命令行工具，可以简单方便的发送伪随机的用户事件流，对Android APP做压力（稳定性）测试。主要是为了测试app是否存在无响应和崩溃的情况。
 
-
+12. 质量保证：Process and Product Quality Assurance，即过程与产品质量保证。
 
 
 12. monkeyrunner与Monkey:
