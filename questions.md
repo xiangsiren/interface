@@ -41,9 +41,9 @@
 
 5. 对于测试架构师的理解：http://www.51testing.com/html/99/n-239999.html
 
-6.测试开发知识点：https://www.jianshu.com/p/69ec38e3727b
+6. 测试开发知识点：https://www.jianshu.com/p/69ec38e3727b
 
-7.开发测试工程师的理解： https://new.qq.com/omn/20180715/20180715A0B9B6.html
+7. 开发测试工程师的理解： https://new.qq.com/omn/20180715/20180715A0B9B6.html
 
 8. 
 
