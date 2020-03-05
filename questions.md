@@ -70,4 +70,10 @@
    
     3. 浏览器，目前selenium支持市面上大多数浏览器，如：火狐，谷歌，IE等
 
-11. 
+11. 软件测试分类：https://airtest.doc.io.netease.com/tutorial/0_automated_testing/
+
+12. 测试计划与测试方案区别：https://wenku.baidu.com/view/1008e68d84868762caaed572.html
+    1. 计划属于组织管理层面的文档，从组织管理的角度对测试活动进行规划，做什么
+    2. 方案技术层面的文档，技术的角度对测试活动进行规划，如何做
+
+13. 
