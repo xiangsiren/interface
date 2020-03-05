@@ -37,7 +37,15 @@
     where—相应文档，缺陷的存放位置，测试环境等 ：测试文档
     who—项目有关人员组成，安排哪些测试人员进行测试 ：测试资源
     how—如何去做，使用哪些测试工具以及测试方法进行测试。：测试方法
-4. 
+4. 编写测试用例的策略：http://www.51testing.com/html/21/n-3959021.html
+
+5. 对于测试架构师的理解：http://www.51testing.com/html/99/n-239999.html
+
+6.测试开发知识点：https://www.jianshu.com/p/69ec38e3727b
+
+7.开发测试工程师的理解： https://new.qq.com/omn/20180715/20180715A0B9B6.html
+
+8. 
 
 
 
