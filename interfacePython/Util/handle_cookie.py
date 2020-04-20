@@ -4,7 +4,7 @@ import os
 
 base_path = os.getcwd()
 sys.path.append(base_path)
-from interfacePython.Util import read_json,write_value
+from interfacePython.Util.handle_json import read_json,write_value
 
 def get_cookie_value(cookie_key):
     '''

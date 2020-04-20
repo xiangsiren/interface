@@ -4,8 +4,9 @@
 # sys.path.append(base_path)
 
 
-from interfacePython.Base import request
+from interfacePython.Base.base_request import request
 from interfacePython.App.Common.mysql import cli
+from interfacePython.App.Model.Models import Case
 
 DBsession = cli().get_session()
 case1 = DBsession.query(Case).filter(Case.id == 1).one()

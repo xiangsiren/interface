@@ -4,7 +4,7 @@
 # sys.path.append(base_path)
 import requests
 import json
-from interfacePython.Util import write_cookie
+from interfacePython.Util.handle_cookie import write_cookie
 from interfacePython.Util.handle_init import handle_ini
 
 
