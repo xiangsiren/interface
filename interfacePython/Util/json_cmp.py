@@ -1,12 +1,12 @@
 #coding=utf-8
 import sys
 import os
-import configparser
+
 base_path = os.getcwd()
 sys.path.append(base_path)
-from Util.handle_json import get_value
-import json_tools
-import json
+from interfacePython.Util import get_value
+
+
 def cmp(src_data,dst_data):
     if isinstance(src_data, dict):
         """若为dict格式"""

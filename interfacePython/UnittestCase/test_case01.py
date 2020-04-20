@@ -1,11 +1,9 @@
 #coding=utf-8
-import sys
 import os
 base_path = os.getcwd()
-import unittest
 # sys.path.append(base_path)
 import unittest
-from Base.base_request import request
+from interfacePython.Base import request
 url = "http://www.imooc.com"
 data = {
     "username":"1111",

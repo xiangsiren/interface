@@ -2,11 +2,8 @@
 import sys
 sys.path.append("E:/Teacher/Imooc/AppiumPython")
 import unittest
-import Util.HTMLTestRunner
 import threading
 from appium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import time
 from AppiumPython.business.login_business import LoginBusiness
 class ParameTestCase(unittest.TestCase):

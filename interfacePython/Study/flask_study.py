@@ -6,7 +6,7 @@ sys.path.append(base_path)
 from flask import Flask
 from flask import request
 import json
-from Util.handle_json import write_value,read_json
+from interfacePython.Util import write_value,read_json
 app = Flask(__name__)
 
 @app.route('/')

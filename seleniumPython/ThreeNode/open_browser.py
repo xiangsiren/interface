@@ -5,13 +5,13 @@ import time
 sys.path.append('/Users/ren/Desktop/web/python/interface/seleniumPython')
 from selenium import webdriver
 from pykeyboard import PyKeyboard
-from ThreeNode.read_init import read_ini
+from seleniumPython.ThreeNode.read_init import read_ini
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.keys import Keys
-from ThreeNode.handle_json import handle_json
+from seleniumPython.ThreeNode.handle_json import handle_json
 
 
 class SeleniumDriver:

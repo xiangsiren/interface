@@ -7,13 +7,13 @@ sys.path.append(base_path)
 import ddt
 import unittest
 import json
-from Util.handle_excel import excel_data
-from Util.handle_header import get_header
-from Util.handle_result import handle_result,handle_result_json,get_result_json
-from Util.handle_cookie import write_cookie,get_cookie_value
-from Util.codition_data import get_data
-from Base.base_request import request
-from Util import HTMLTestRunner
+from interfacePython.Util import excel_data
+from interfacePython.Util import get_header
+from interfacePython.Util import handle_result,handle_result_json,get_result_json
+from interfacePython.Util import get_cookie_value
+from interfacePython.Util import get_data
+from interfacePython.Base import request
+from interfacePython.Util import HTMLTestRunner
 data = excel_data.get_excel_data()
 
 @ddt.ddt
@@ -127,5 +127,5 @@ if __name__ == "__main__":
     discover = unittest.defaultTestLoader.discover(case_path,pattern="run_case_*.py")
     #unittest.TextTestRunner().run(discover)
     with open(report_path,"wb") as f:
-        runner = HTMLTestRunner.HTMLTestRunner(stream=f,title="Mushishi",description="this is test")
+        runner = HTMLTestRunner.HTMLTestRunner(stream=f, title="Mushishi", description="this is test")
         runner.run(discover)

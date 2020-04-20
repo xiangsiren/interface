@@ -4,8 +4,7 @@
 import sys
 import os
 sys.path.append(os.getcwd())
-from App.Common.mysql import cli
-from App.Model.Models import *
+from interfacePython.App.Common.mysql import cli
 from datetime import datetime
 # import json
 types = ['css', 'js', 'png', 'jpg', 'jif', 'ico']

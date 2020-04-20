@@ -5,13 +5,12 @@ import os
 
 sys.path.append(os.getcwd())
 
-from App.Common.mysql import cli
+from interfacePython.App.Common.mysql import cli
 import unittest
 # from ddt import ddt,data,file_data,unpack
 import ddt
-from Util import HTMLTestRunner
-from Base.base_request import request
-from App.Model.Models import *
+from interfacePython.Util import HTMLTestRunner
+from interfacePython.Base import request
 
 DBsession = cli().get_session()
 case1 = DBsession.query(Case).all()

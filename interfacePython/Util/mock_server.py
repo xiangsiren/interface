@@ -3,8 +3,7 @@ import sys
 import os
 base_path = os.getcwd()
 sys.path.append(base_path)
-from mitmproxy import http
-from Util.handle_json import get_value
+from interfacePython.Util import get_value
 import json
 class MockServer:
 

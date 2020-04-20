@@ -1,13 +1,12 @@
 #coding=utf-8
-import sys
 import os
 base_path = os.getcwd()
 import unittest
 # sys.path.append(base_path)
 import json
 import mock
-from Util import HTMLTestRunner
-from Base.base_request import request
+from interfacePython.Util import HTMLTestRunner
+from interfacePython.Base import request
 import requests
 
 

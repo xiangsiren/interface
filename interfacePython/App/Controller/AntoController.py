@@ -1,17 +1,11 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-from appium import webdriver
-import time
-import sys
-import os
-import app
 # base_path = os.getcwd()
 # sys.path.append(base_path)
 
 
-from Base.base_request import request
-from App.Common.mysql import cli
-from App.Model.Models import *
+from interfacePython.Base import request
+from interfacePython.App.Common.mysql import cli
 
 DBsession = cli().get_session()
 case1 = DBsession.query(Case).filter(Case.id == 1).one()

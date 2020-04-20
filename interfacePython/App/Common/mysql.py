@@ -2,18 +2,17 @@
 # -*- coding: utf8 -*-
 from sqlalchemy import func
 from sqlalchemy.orm import sessionmaker, scoped_session
-from sqlalchemy import create_engine, or_, and_, any_, text, exists
-from App.Model.Models import *
-from App.Common import conf
+from sqlalchemy import create_engine
+from interfacePython.App.Common import conf
 
 
 class cli:
     def __init__(self):
         conn = 'mysql+mysqlconnector://{}:{}@{}:{}/{}?charset=utf8'.format(conf.RDS_MYSQL['USER'],
-                                                                    conf.RDS_MYSQL['PASSWORD'],
-                                                                    conf.RDS_MYSQL['HOST'],
-                                                                    conf.RDS_MYSQL['PORT'],
-                                                                    conf.RDS_MYSQL['DB_NAME_BMC'])
+                                                                           conf.RDS_MYSQL['PASSWORD'],
+                                                                           conf.RDS_MYSQL['HOST'],
+                                                                           conf.RDS_MYSQL['PORT'],
+                                                                           conf.RDS_MYSQL['DB_NAME_BMC'])
         engine = create_engine(conn, pool_recycle=10, pool_pre_ping=True)
         DBSession = scoped_session(sessionmaker(bind=engine))
         self.session = DBSession()

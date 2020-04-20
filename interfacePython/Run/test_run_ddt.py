@@ -3,17 +3,15 @@ import sys
 import os
 base_path = os.getcwd()
 sys.path.append(base_path)
-from collections.abc import Iterable
-from Util.handle_excel import excel_data
-import json
+from interfacePython.Util import excel_data
 import unittest
 #from ddt import ddt,data,file_data,unpack
 import ddt
 import HTMLTestRunner
-from Util.handle_header import get_header
-from Util.handle_result import handle_result,handle_result_json,get_result_json
-from Util.handle_cookie import write_cookie,get_cookie_value
-from Base.base_request import request
+from interfacePython.Util import get_header
+from interfacePython.Util import handle_result,handle_result_json,get_result_json
+from interfacePython.Util import get_cookie_value
+from interfacePython.Base import request
 #['imooc_001', '登陆', 'yes', None, 'login', 'post', '{"username":"111111"}', 'yes', 'message', None]
 
 data = excel_data.get_excel_data()

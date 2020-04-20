@@ -5,7 +5,7 @@ base_path = os.getcwd()
 sys.path.append(base_path)
 import ddt
 import unittest
-from Util.handle_excel import excel_data
+from interfacePython.Util import excel_data
 data = excel_data.get_excel_data()
 #data = [[1,2,3,4,5],[2,3,4,5,6],[3,4,5,6,7],[4,5,6,7,8]]
 

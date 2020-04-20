@@ -1,11 +1,10 @@
 #coding=utf-8
 import sys
 import os
-import configparser
+
 base_path = os.getcwd()
 sys.path.append(base_path)
-import json
-from Util.handle_json import get_value,read_json,write_value
+from interfacePython.Util import read_json,write_value
 
 def get_cookie_value(cookie_key):
     '''
