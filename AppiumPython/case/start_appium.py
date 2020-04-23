@@ -7,6 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 from AppiumPython.util.read_init import ReadIni
 from AppiumPython.util.get_by_local import GetByLocal
+
+
 def get_driver():
 	capabilities = {
 	  "platformName": "Android",
@@ -96,17 +98,17 @@ def login_by_class():
 	#element.click()
 
 def login_by_node():
-	element = driver.find_element_by_id('cn.com.open.mooc:id/sv_scrollview')
-	elements = element.find_elements_by_class_name('android.widget.EditText')
-	elements[0].send_keys('18513199586')
-	elements[1].send_keys('111111')
-	driver.find_element_by_id('cn.com.open.mooc:id/login_lable').click()
+
+	driver.find_element_by_id('com.bckj.banmacang:id/et_login_password_mobile').send_keys('dishini')
+	driver.find_elements_by_class_name('android.widget.EditText')[1].send_keys('123456')
+
+	driver.find_element_by_id('com.bckj.banmacang:id/tv_login').click()
 
 
 def login_by_uiautomator():
 	# driver.find_element_by_android_uiautomator('new UiSelector().text("libai123")').clear()
-	driver.find_element_by_android_uiautomator('new UiSelector().text("请输入您的登录账号")').send_keys('libai123')
-	driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.bckj.banmacang:id/et_login_password")').send_keys('111111')
+	driver.find_element_by_android_uiautomator('new UiSelector().text("请输入您的登录账号")').send_keys('dishini')
+	driver.find_element_by_android_uiautomator('new UiSelector().resourceId("com.bckj.banmacang:id/et_login_password")').send_keys('123456')
 
 def login_by_xpath():
 	#driver.find_element_by_xpath('//*[contains(@text,"忘记")]').click()
@@ -138,7 +140,8 @@ def get_tost():
 	WebDriverWait(driver,10,0.1).until(EC.presence_of_element_located(tost_element))
 
 driver =get_driver()
-#swipe_on('left')
+login_by_node()
+swipe_on('up')
 #time.sleep(1)
 #swipe_on('left')
 #time.sleep(1)
@@ -152,4 +155,4 @@ driver =get_driver()
 #login_by_xpath()
 #get_tost()
 # login()
-login_by_uiautomator()
+# login_by_uiautomator()
